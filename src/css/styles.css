@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+}
+/* Home CSS */
+.sale {
+    color: black;
+    text-align: center;
+}
+input[type="text"] {
+    font-size: 1.2rem;;
+    display: block;
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.categories ul {
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+    text-align: center;
+}
+.categories ul li {
+    list-style-type: none;
+    color: black;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .7rem;
+}
+.categories ul li:hover {
+    text-decoration: 4px solid black underline;
+    cursor: pointer;
+}
+.container {
+    position: relative;
+    width: 1500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    background-color: #FFF;
+    padding: 1rem;
+}
+.container .card{
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 5px solid #f7f7f7;
+    border-radius: 4px;
+    position: relative;
+}
+.container .card .img-box {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s ease-in-out;
+    transform-origin: right;
+    border-radius: 4px;
+}
+.container .card:hover .img-box img {
+    transform: scale(1.2);
+}
+.container .card .content {
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+}
+.container .card .content .clothing-price-div p.clothing-price {
+    text-align:justify;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.container .card .content .clothing-title-div {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.container .card .content .clothing-title h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+.clothing-desc-div {
+    display: none;
+}
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+}
+.button-div .btn-1 {
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    white-space: nowrap;
+    font-size: .9rem;
+}
+.button-div .btn-2 {
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    font-size: .9rem
+}
+/* End Home CSS */
+/* Navbar CSS */
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 1.5rem;
+    background-color: #0e1111;
+}
+/* nav img:first-child {
+    border: 2px solid red;
+    
+} */
+nav img {
+    width:170px;
+    height: 170px;
+    float: left;
+}
+nav ul li {
+    display: inline-block;
+    padding: .9rem;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li {
+    text-decoration: none;
+    color: white;
+}
+/* Navbar CSS */
+/* Payment Form CSS */
+fieldset {
+    border-top: .2em solid #fcfdff;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+    width: 80%;
+    margin: auto;
+}
+fieldset#personal-info label,
+fieldset#normal-info label,
+fieldset#contact-info {
+    font-size: .8rem;
+}
+fieldset#contact-info {
+    padding-left: 1.1rem;
+}
+fieldset#normal-info {
+    display: flex;
+    flex-direction: column;
+    border-top: transparent;
+}
+.form-wrapper input,
+select {
+    width: 90%;
+    outline: 0;
+    border-width: 0;
+    height: 2.8rem;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    text-indent: .5rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+select {
+    margin-top: -1rem;
+}
+input#card-exp-date,
+input#cvc-card {
+    width: 88%;
+}
+input::placeholder,
+select::placeholder {
+    color: #b2b2b2;
+}
+.payment-page-title {
+    background: #ffffff;
+    width: 85%;
+    margin: auto;
+}
+.payment-page-title h2 {
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.form-wrapper {
+    background: #ffffff;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+label {
+    float: left;
+    text-align: left;
+    padding: .3rem 0 .5rem 1rem;
+}
+label#state-label {
+    margin-bottom: -.3rem;
+}
+.form-wrapper button {
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    width: 120px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: .1s;
+}
+.form-wrapper button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.form-wrapper button:focus {
+    background-color: green;
+}
+.form-title {
+    text-align: center;
+    letter-spacing: .15rem;
+    padding-top: 1rem;
+}
+.personal-info-title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.personal-info-title-div .stripe-img {
+    width: 35%;
+    height: 35%;
+    padding-bottom: .8rem;
+}
+.card-exp-and-cvc-div {
+    display: flex;
+    margin: 0 auto;
+    width: 96%;
+    justify-content: space-evenly;
+    margin-bottom: -.5rem;
+    margin-top: -1rem;
+}
+.card-exp-and-cvc-div input {
+    width: 70%;
+}
+button#payment-form {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+.btn-payment {
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    padding-bottom: 1rem;
+    height: 2rem;
+}
+#state {
+    width: 5%;
+}
+#zip-code {
+    width: 25%;
+}
+#zip-code::placeholder {
+    text-align: left;
+}
+/* End Payment Form CSS */
+/* Footer CSS */
+footer {
+    background-color: #0e1111;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+p.copyright {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+/* End Footer CSS */
+/* MEDIA QUERIES */
+@media (min-width: 1200px) {
+    /* Checkout.js */
+    .personal-info-title-div .stripe-img {
+        width: 20%;
+        height: 20%;
+    }
+    .form-wrapper label {
+        padding-left: 2.3rem;
+        padding-bottom: 1rem;
+    }
+    .form-wrapper .card-exp-and-cvc-div {
+        justify-content: left;
+        padding-left: 2.5rem;
+    }
+    input#card-exp-date,
+    input#cvc-card {
+        margin-left: 0;
+    }
+}
