@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./../css/styles.css";
 
+
+//TERMINAL COMMANDS:
+// git push heroku main
+// heroku open
+
 //useEffect keeps track of every re-render.
 //You want to run axios everytime the page loads, so useEffect takes care of that.
 
