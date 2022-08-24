@@ -72,7 +72,7 @@ input[type="text"] {
     transform-origin: right;
     border-radius: 4px;
 }
-.container .card:hover .img-box img {
+.container .card .img-box:hover img {
     transform: scale(1.2);
 }
 .container .card .content {
@@ -111,7 +111,13 @@ input[type="text"] {
     bottom: 0;
     left: 50px;
     white-space: nowrap;
-    font-size: .9rem;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 8px;
+    color: white;
+    outline: #0e1111;
+    border-color: #0e1111;
 }
 .button-div .btn-2 {
     width: 30%;
@@ -119,7 +125,19 @@ input[type="text"] {
     position: absolute;
     bottom: 0;
     right: 50px;
-    font-size: .9rem
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: rgba(0,0,0,.9);
+    border-radius: 8px;
+    color: white;
+    outline: #0e1111;
+    border-color: #0e1111;
+}
+.button-div .btn-1:hover,
+.button-div .btn-2:hover {
+    background-color: rgba(0,0,0,0.8);
+    border-color: #ffffff;
+    cursor: pointer;
 }
 /* End Home CSS */
 /* Navbar CSS */

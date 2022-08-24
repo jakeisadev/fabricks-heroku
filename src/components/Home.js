@@ -11,6 +11,8 @@ import "./../css/styles.css";
 //You want to run axios everytime the page loads, so useEffect takes care of that.
 
 const Home = () => {
+  //Sets the visability of a component to true or false
+  const [show, setShow] = useState(true);
   const [products, setProducts] = useState([]);
   //You can never modify any state without using its setter
   //If I want to save a value to products, it must be passed as an argument to the setter
@@ -52,7 +54,9 @@ const Home = () => {
               
               Search for cart designs online.*/}
               <div className="img-box">
-                <img src={product.image} alt="all the items as practice" />
+                {
+                  show && <img src={product.image} alt="all the items as practice" />
+                }
               </div>
               <div className="content">
                 <div className="clothing-title-div">
@@ -68,7 +72,7 @@ const Home = () => {
                   </p>
                   <div className="button-div">
                     <button className="btn-1">Add to Cart</button>
-                    <button className="btn-2">Details</button>
+                    <button type="button" onClick={() => setShow(!show)} className="btn-2">Details</button>
                   </div>
                 </div>
                 <div className="clothing-desc-div">
